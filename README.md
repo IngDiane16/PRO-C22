@@ -1,2 +1,2 @@
-# PRO-C22-wireframe
-wire frame for c22 
+# PRO-C22
+estructura alámbrica para c22 
