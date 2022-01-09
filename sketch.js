@@ -19,7 +19,7 @@ function setup() {
   };
   ground = Bodies.rectangle(0, height - 1, width * 2, 1, options);
   World.add(world, ground);
-
+  /**Adding tower with Matter */
   tower = Bodies.rectangle(160, 350, 160, 310, options);
   World.add(world, tower);
   //add the cannon with the class 
@@ -31,12 +31,15 @@ function draw() {
   background(189);
 
   Engine.update(engine);
+  /**adding ground */
   rect(ground.position.x, ground.position.y, width * 2, 1);
   image(backgroundImg, 0, 0, 1200, 600);
+  /**Adding tower */
   push();
   imageMode(CENTER);
   image(towerImage, tower.position.x, tower.position.y, 160, 310);
   pop();
+  /**Adding cannon */
   cannon.show();
 
   

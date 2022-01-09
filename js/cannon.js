@@ -5,13 +5,16 @@ class Cannon {
     this.width = width;
     this.height = height;
     this.angle = angle;
+    /**preload images  */
+    this.cannonImg = loadImage("../assets/canon.png");
+    this.cannonBase = loadImage("../assets/cannonBase");
   }
   show() {
     push();
-    rectMode(CENTER);
-    rect(this.x, this.y, this.width, this.height);
+    imageMode(CENTER);
+    image(cannonImg, this.x, this.y, this.width, this.height);
     pop();
-    rect(70,20,200,200);
+    image(cannonBase, 70, 20, 200, 200);
     noFill();
   }
 }
