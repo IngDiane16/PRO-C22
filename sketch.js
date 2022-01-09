@@ -27,7 +27,7 @@ function draw() {
   background(189);
 
   Engine.update(engine);
-  image(ground.position.x, ground.position.y, width * 2, 1);
+  rect(ground.position.x, ground.position.y, width * 2, 1);
   image(backgroundImg, 0, 0, 1200, 600);
   push();
   imageMode(CENTER);
