@@ -30,8 +30,8 @@ function draw() {
   rect(ground.position.x, ground.position.y, width * 2, 1);
   image(backgroundImg, 0, 0, 1200, 600);
   push();
-  rectMode(CENTER);
-  rect(towerImage, tower.position.x, tower.position.y, 160, 310);
+  imageMode(CENTER);
+  image(towerImage, tower.position.x, tower.position.y, 160, 310);
   pop();
 
   
