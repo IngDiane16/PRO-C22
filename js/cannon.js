@@ -7,7 +7,7 @@ class Cannon {
     this.angle = angle;
     /**preload images  */
     this.cannonImg = loadImage("../assets/canon.png");
-    this.cannonBase = loadImage("../assets/cannonBase");
+    this.cannonBase = loadImage("../assets/cannonBase.png");
   }
   show() {
     push();
