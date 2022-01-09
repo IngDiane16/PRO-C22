@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 var engine, world, ground;
 var backgroundImg, tower, towerImage;
-var cannon,angle;
+var cannon, angle;
 
 function preload() {
   backgroundImg = loadImage("./assets/background.gif");
@@ -22,9 +22,11 @@ function setup() {
   /**Adding tower with Matter */
   tower = Bodies.rectangle(160, 350, 160, 310, options);
   World.add(world, tower);
-  //add the cannon with the class 
-  angle=20;
-  cannon = new Cannon(180,110,130,100,angle)
+  //add the cannon with the class
+  angle = 20;
+  cannon = new Cannon(180, 110, 130, 100, angle);
+  /**Adding the cannon ball with the class */
+  cannonBall = new CannonBall(cannon.x, cannon.y);
 }
 
 function draw() {
@@ -41,6 +43,6 @@ function draw() {
   pop();
   /**Adding cannon */
   cannon.show();
-
-  
+  /**Adding cannon Ball */
+  cannonBall.show();
 }
